@@ -16,12 +16,13 @@ func prompt_password() string {
 func main() {
 	secret_password := "secret123"
 	var password string
-	for password != secret_password {
+	for {
 		password = prompt_password()
-		if password != secret_password {
-			fmt.Println("Incorrect, try again.")
-		} else {
+		if password == secret_password {
 			fmt.Println("Access Granted!")
+			break
+		} else {
+			fmt.Println("Incorrect, try again.")
 		}
 	}
 }
