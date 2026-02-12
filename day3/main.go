@@ -5,7 +5,7 @@ import (
 )
 
 
-func prompt_password() string {
+func promptPassword() string {
 	var password string
 	fmt.Print("Enter Password: ")
 	fmt.Scan(&password)
@@ -14,11 +14,11 @@ func prompt_password() string {
 
 
 func main() {
-	secret_password := "secret123"
+	secretPassword := "secret123"
 	var password string
 	for {
-		password = prompt_password()
-		if password == secret_password {
+		password = promptPassword()
+		if password == secretPassword {
 			fmt.Println("Access Granted!")
 			break
 		} else {

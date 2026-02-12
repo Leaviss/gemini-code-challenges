@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-func check_access() {
+func checkAccess() {
 	var role string
 	fmt.Print("Enter your role: ")
 	fmt.Scan(&role)
@@ -21,5 +21,5 @@ func check_access() {
 }
 
 func main() {
-	check_access()
+	checkAccess()
 }
